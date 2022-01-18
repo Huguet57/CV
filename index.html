@@ -6,7 +6,16 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body id="preview">
-        <h1 class="code-line" data-line-start=0 data-line-end=1><a id="Andreu_Huguet_Segarra_0"></a>Andreu Huguet Segarra</h1>
+        <div style="display: flex; justify-content: space-around; margin-top: 50px;">
+            <div>
+                <h1 class="code-line" data-line-start=0 data-line-end=1><a id="Andreu_Huguet_Segarra_0"></a>Andreu Huguet Segarra</h1>
+                <hr />
+                <h5><img src="icons/mail.png" style="height: 16px;" /> <a href="mailto:andreu.huguet@estudiantat.upc.edu">andreu.huguet@estudiantat.upc.edu</a> &nbsp;&nbsp; <img src="icons/github.png" /> <a href="https://github.com/Huguet57/">Huguet57</a> &nbsp;&nbsp; <img src="icons/linkedin.png" /> <a href="https://linkedin.com/in/andreuhuguet">andreuhuguet</a></h5>
+            </div>
+            <div>
+                <img src="face.png" style="height: 150px;" />
+            </div>
+        </div>
         <h2 class="code-line" data-line-start=1 data-line-end=2><a id="Projects_1"></a>Projects</h2>
         <h3 class="code-line" data-line-start=2 data-line-end=3><a id="LIMOVelo_LiDARInertial_SLAM_for_fast_and_aggressive_movement_2"></a>LIMO-Velo: LiDAR-Inertial SLAM for fast and aggressive movement</h3>
         <h4 class="code-line" data-line-start=3 data-line-end=4><a id="September_2021__March_2022__HKUST_as_a_Visiting_Intern_Researcher_3"></a>September 2021 - March 2022 @ HKUST as a Visiting Intern Researcher</h4>
@@ -15,7 +24,7 @@
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ok_AKmbFZ7g?start=24&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </center>
             <br>
-        Based on <a href="https://github.com/hku-mars/FAST_LIO">Fast-LIO</a>'s approach, this framework corrects the localization with LiDAR observations at an extremely high-frequency (up to 200Hz) and map directly to an <a href="https://github.com/hku-mars/ikd-Tree">Incremental KD-Tree</a> at low-frequency (10Hz). Allowing us to post-process the pointcloud accordingly (remove dynamic objects or apply segmentation) while not losing any quality w.r.t. to mapping at 200Hz.</p>
+        Based on <a href="https://github.com/hku-mars/FAST_LIO">Fast-LIO</a>'s approach, this framework corrects the localization with LiDAR observations at an extremely high-frequency (up to 200Hz) and maps directly to an <a href="https://github.com/hku-mars/ikd-Tree">Incremental KD-Tree</a> at low-frequency (10Hz). Allowing us to post-process the pointcloud accordingly (remove dynamic objects or apply segmentation) while not losing any quality w.r.t. to mapping at 200Hz.</p>
 
         <center>
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KSjOPA1On4A?start=2&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,7 +37,7 @@
         <ul>
         <li class="has-line-data" data-line-start="12" data-line-end="13">+ First algorithm using the fact that spinning LiDARs can localize at higher frequency than mapping <strong>without loss</strong> in quality.</li>
         <li class="has-line-data" data-line-start="13" data-line-end="14">+ With higher localization frequency, the steps are smaller, less complex and <strong>better approximated by EKF</strong> (since it assumes <em>quasi</em>-linearity).</li>
-        <li class="has-line-data" data-line-start="14" data-line-end="15">+ More accurate <strong>motion compensation</strong> that can me smoothed out and processed when mapping.</li>
+        <li class="has-line-data" data-line-start="14" data-line-end="15">+ More accurate <strong>motion compensation</strong> that can be smoothed out and processed when mapping.</li>
         <li class="has-line-data" data-line-start="15" data-line-end="16">+ Ability to <strong>post-process</strong> what it maps while being <strong>real-time</strong>.</li>    
     </ul>
 
