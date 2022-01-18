@@ -15,7 +15,7 @@
                 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Ok_AKmbFZ7g?start=24&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </center>
             <br>
-        Based on <a href="https://github.com/hku-mars/FAST_LIO">Fast-LIO</a>'s approach, this framework localizes at corrects the movement with LiDAR observations at extremely high-frequency (up to 200Hz) and map directly to an <a href="https://github.com/hku-mars/ikd-Tree">Incremental KD-Tree</a> at low-frequency (10Hz). Allowing us to post-process the pointcloud accordingly (remove dynamic objects or apply segmentation) while not losing any quality w.r.t. to mapping at 200Hz.</p>
+        Based on <a href="https://github.com/hku-mars/FAST_LIO">Fast-LIO</a>'s approach, this framework corrects the localization with LiDAR observations at an extremely high-frequency (up to 200Hz) and map directly to an <a href="https://github.com/hku-mars/ikd-Tree">Incremental KD-Tree</a> at low-frequency (10Hz). Allowing us to post-process the pointcloud accordingly (remove dynamic objects or apply segmentation) while not losing any quality w.r.t. to mapping at 200Hz.</p>
 
         <center>
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KSjOPA1On4A?start=2&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -28,8 +28,9 @@
         <ul>
         <li class="has-line-data" data-line-start="12" data-line-end="13">+ First algorithm using the fact that spinning LiDARs can localize at higher frequency than mapping <strong>without loss</strong> in quality.</li>
         <li class="has-line-data" data-line-start="13" data-line-end="14">+ With higher localization frequency, the steps are smaller, less complex and <strong>better approximated by EKF</strong> (since it assumes <em>quasi</em>-linearity).</li>
-        <li class="has-line-data" data-line-start="14" data-line-end="16">+ Ability to <strong>post-process</strong> what it maps while being <strong>real-time</strong>.</li>
-        </ul>
+        <li class="has-line-data" data-line-start="14" data-line-end="15">+ More accurate <strong>motion compensation</strong> that can me smoothed out and processed when mapping.</li>
+        <li class="has-line-data" data-line-start="15" data-line-end="16">+ Ability to <strong>post-process</strong> what it maps while being <strong>real-time</strong>.</li>    
+    </ul>
 
         <br />
         <hr />
@@ -45,7 +46,7 @@
         XALOC’s journey began in 2018 when within a full year, <a href="xaloc-with-the-crew.png">extremely talented engineers</a> built the first DV vehicle ever seen in Spain and finished 10 laps in an official Formula Student Driverless competition (in 20 minutes).</p>
         <p class="has-line-data" data-line-start="16" data-line-end="17">After the pandemy hit Spain the hardest, the project had to be stopped in March 2020 and we resumed it in September 2020 with a clear goal in mind: reach 90km/h with a reliable autonomous solution.</p>
 
-        <p class="has-line-data" data-line-start="18" data-line-end="19">In May 2021, the car reached its highest velocities of 60km/h before disaster strucked: the brake microcontroller collapsed due to high fatigue. With the competitions in less than two months, the electronics issues of the car made it <a href="https://youtu.be/-OBi6yUvAV8?t=7925">unable to complete any official competition lap</a>.</p>
+        <p class="has-line-data" data-line-start="18" data-line-end="19">In May 2021, the car reached its highest velocities of 60km/h before disaster strucked: the brake microcontroller collapsed due to high fatigue. With the competitions in less than two months, the electronics issues of the car made it <a href="https://youtu.be/-OBi6yUvAV8?t=7925">unable to complete any official competition lap</a>. I know what it feels like to fail big time, that's innovation!</p>
 
         <center>
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-OBi6yUvAV8?start=7925&autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
